@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/jobs',require('./routes/jobRoutes'));
 
 
 mongoose.connection.once('open',()=>{
