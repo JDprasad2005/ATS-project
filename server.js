@@ -15,6 +15,7 @@ app.use(cookieParser());
 
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/jobs',require('./routes/jobRoutes'));
+app.use('/api/applications', require('./routes/applicationRoutes'));
 
 
 mongoose.connection.once('open',()=>{
